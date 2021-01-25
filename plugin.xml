@@ -25,7 +25,7 @@
   </engines>
 
   <js-module src="www/Toast.js" name="Toast">
-    <clobbers target="window.plugins.toast" />
+    <clobbers target="" />
   </js-module>
 
   <!-- ios -->
@@ -48,13 +48,13 @@
   <!-- android -->
   <platform name="android">
 
-    <config-file target="res/xml/config.xml" parent="/*">
+    <config-file target="res/xml/configs.xml" parent="/*">
       <feature name="Toast">
         <param name="android-package" value="nl.xservices.plugins.Toast" />
       </feature>
     </config-file>
 
-    <source-file src="src/android/nl/xservices/plugins/Toast.java" target-dir="src/nl/xservices/plugins"/>
+    <source-file src="src/nl/xservices/plugins/Toast.java" target-dir="src/nl/xservices/plugins"/>
   </platform>
 
   <!-- wp8 -->
